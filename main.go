@@ -39,5 +39,7 @@ func main() {
 	fmt.Println(factorial(5))
 	fmt.Println()
 	Pointers()
+	fmt.Println()
+	Structs()
 
 }
