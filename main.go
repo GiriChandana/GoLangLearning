@@ -9,4 +9,10 @@ func main() {
 	VariableScope()
 	fmt.Println()
 	UserInput()
+	fmt.Println()
+	VariableType()
+	fmt.Println()
+	typeCasting()
+	fmt.Println()
+	constants()
 }
