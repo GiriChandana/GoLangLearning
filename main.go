@@ -15,4 +15,6 @@ func main() {
 	typeCasting()
 	fmt.Println()
 	constants()
+	fmt.Println()
+	operators()
 }
