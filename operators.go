@@ -17,4 +17,8 @@ func operators() {
 
 	fmt.Printf("!(a == b) = %t\n", !(a == b))
 
+	var c, d bool = true, false
+	fmt.Printf("c && d ? %t\n", (c && d))
+	fmt.Printf("c || d ? %t\n", (c || d))
+
 }
