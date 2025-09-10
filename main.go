@@ -29,4 +29,15 @@ func main() {
 	Slices()
 	fmt.Println()
 	maps()
+	fmt.Println()
+	fmt.Println("Sum = ", functions(2, 3))
+	fmt.Println()
+	VariadicFunction("Chandana")
+	VariadicFunction("Chandana", "English")
+	VariadicFunction("Chandana", "English", "Hindi")
+	VariadicFunction("Chandana", "English", "Maths", "Science")
+	fmt.Println(factorial(5))
+	fmt.Println()
+	Pointers()
+
 }
