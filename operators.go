@@ -21,4 +21,9 @@ func operators() {
 	fmt.Printf("c && d ? %t\n", (c && d))
 	fmt.Printf("c || d ? %t\n", (c || d))
 
+	var x, y int = 100, 90
+	fmt.Printf("x & y: %d\n", x&y)
+	fmt.Printf("x | y: %d\n", x|y)
+	fmt.Printf("(x+y) >> 2: %d\n", x+y>>2)
+
 }

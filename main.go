@@ -17,4 +17,12 @@ func main() {
 	constants()
 	fmt.Println()
 	operators()
+	fmt.Println()
+	controlFlow()
+	fmt.Println()
+	switchBlock()
+	fmt.Println()
+	ForLoop()
+	fmt.Println()
+	Arrays()
 }
