@@ -25,4 +25,6 @@ func main() {
 	ForLoop()
 	fmt.Println()
 	Arrays()
+	fmt.Println()
+	Slices()
 }
