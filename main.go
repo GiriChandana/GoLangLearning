@@ -27,4 +27,6 @@ func main() {
 	Arrays()
 	fmt.Println()
 	Slices()
+	fmt.Println()
+	maps()
 }
