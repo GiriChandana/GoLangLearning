@@ -7,4 +7,6 @@ func main() {
 	PrintVariables()
 	fmt.Println()
 	VariableScope()
+	fmt.Println()
+	UserInput()
 }
