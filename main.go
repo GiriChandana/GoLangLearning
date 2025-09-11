@@ -41,5 +41,10 @@ func main() {
 	Pointers()
 	fmt.Println()
 	Structs()
+	fmt.Println()
+	fmt.Println(Calculations(20, 30))
+	fmt.Println()
+	EntryExit()
+	discountedPrice("apples", 100)
 
 }
