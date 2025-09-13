@@ -12,7 +12,7 @@ func PrintVariables() {
 	var d float32 = 5
 	fmt.Println("float32 d = ", d)
 	var s, t string
-	s = "Kodecloud"
+	s = "Kodecloud platform"
 	t = "courses"
 	fmt.Printf("String s = %v, String t = %v", s, t)
 	fmt.Println()
