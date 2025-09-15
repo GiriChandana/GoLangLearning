@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/GiriChandana/cryptit/decrypt"
-	"github.com/GiriChandana/cryptit/encrypt"
+	"github.com/GiriChandana/GoLangLearning/cryptit/decrypt"
+	"github.com/GiriChandana/GoLangLearning/cryptit/encrypt"
 )
 
 func main() {
