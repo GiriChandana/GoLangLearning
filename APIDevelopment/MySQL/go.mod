@@ -1,4 +1,4 @@
-module golanglearning
+module mysql
 
 go 1.25.1
 
