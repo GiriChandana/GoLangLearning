@@ -1,5 +1,7 @@
+// decrypt package conists of all the decryption algorithms
 package decrypt
 
+// decrypts by reducing the ascii code bt 3 for each character
 func Nimbus(str string) string {
 	decryptedStr := ""
 	for _, c := range str {
