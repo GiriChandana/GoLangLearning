@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 type Product struct {
@@ -26,8 +28,9 @@ func returnAllProducts(w http.ResponseWriter, r *http.Request) {
 }
 
 func getProduct(w http.ResponseWriter, r *http.Request) {
-	log.Println(r.URL.Path)
-	key := r.URL.Path[len("/product/"):]
+	//log.Println(r.URL.Path)
+	vars := mux.Vars(r)
+	key := vars["id"]
 	for _, product := range Products {
 		if string(product.Id) == key {
 			json.NewEncoder(w).Encode(product)
@@ -35,10 +38,11 @@ func getProduct(w http.ResponseWriter, r *http.Request) {
 	}
 }
 func handleRequests() {
-	http.HandleFunc("/products", returnAllProducts)
-	http.HandleFunc("/product/", getProduct)
-	http.HandleFunc("/", homePage)
-	http.ListenAndServe("localhost:8080", nil)
+	myRouter := mux.NewRouter().StrictSlash(true)
+	myRouter.HandleFunc("/products", returnAllProducts)
+	myRouter.HandleFunc("/product/{id}", getProduct)
+	myRouter.HandleFunc("/", homePage)
+	http.ListenAndServe("localhost:8080", myRouter)
 }
 func main() {
 	Products = []Product{
