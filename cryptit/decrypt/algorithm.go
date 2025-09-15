@@ -7,6 +7,6 @@ func Nimbus(str string) string {
 		character := string(asciiCode - 3)
 		decryptedStr += character
 
-		return decryptedStr
 	}
+	return decryptedStr
 }
